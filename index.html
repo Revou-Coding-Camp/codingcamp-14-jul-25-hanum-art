@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p>A simple modern official website</p>
+  <h2>Empowering Innovation, Delivering Digital Solutions</h2>
+  <p>At Harfi Corporation, we specialize in crafting modern, scalable, and user-centric technologies to help businesses grow in the digital era. Our passion is turning your ideas into powerful, practical solutions that make real impact.</p>
+  </header>  
+  <section class="jumbotron">
+    <h1>JUMBOTRON</h1>
+ <section class="jumbotron">
+
+  <h1>Smart, Scalable, and Future-Ready</h1>
+  <p>Harfi Corporation helps you build tomorrow’s technology today — with reliable systems and real results.</p>
+  <button onclick="document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' })">
+    Contact Us
+  </button>
+</section>
+
+  </section>
+   <section class="headquarter">
+    <div id="officeInfo" class="office-info"></div>
+    <h3>Our Headquarter</h3>
+     <div class="circle-container">
+  <div class="circle" onclick="showOffice('jakarta')">Jakarta</div>
+  <div class="circle" onclick="showOffice('bandung')">Bandung</div>
+  <div class="circle" onclick="showOffice('surabaya')">Surabaya</div>
+</div>
+
+  </section>
+    <section class="form-section">
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="location">Target Location:</label>
+  <select id="location" name="location">
+    <option value="Jakarta">Jakarta</option>
+    <option value="Bandung">Bandung</option>
+    <option value="Surabaya">Surabaya</option>
+  </select>
+
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div id="outputBox">
+  <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+  <p><strong>Name:</strong> <span id="outName">-</span></p>
+  <p><strong>Target:</strong> <span id="outTarget">-</span></p>
+  <p><strong>Phone:</strong> <span id="outPhone">-</span></p>
+  <p><strong>Pesan:</strong> <span id="outMessage">-</span></p>
+</div>
+
+  </section> 
+   <footer>
+  <div class="footer-links">
+    <a href="#home">Home</a> |
+    <a href="#about">About Us</a> |
+    <a href="#services">Services</a> |
+    <a href="#blog">Blog</a> |
+    <a href="#careers">Careers</a> |
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-contact">
+    <p>Email: contact@companymdn.id | Phone: +62‑xxx‑xxxx</p>
+  </div>
+  <div class="footer-legal">
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Use</a>
+  </div>
+  <div class="footer-mission">
+    <p><em>Empowering innovation through connection and collaboration.</em></p>
+  </div>
+  <div class="footer-newsletter">
+    <p>Stay updated — <a href="#">Subscribe to our newsletter</a></p>
+  </div>
+  <div class="footer-copy">
+    <p>&copy; 2025 Harfi Corporation. All rights reserved.</p>
+    <p>Made with ❤️ in Indonesia</p>
+    <!-- Opsional: <p class="credits">Designed by Harfi Dev Studio</p> -->
+  </div>
+</footer>
+    <script src="script.js"></script></body>
+</html>
